@@ -5,6 +5,7 @@
 body {
   font-family: "Mulish", sans-serif;
   font-family: "Nunito", sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -99,6 +100,26 @@ img {
   line-height: 17px;
   color: #333;
   padding-left: 18px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  padding: 18px 0px;
+  margin: 0;
+  list-style: none;
+}
+.breadcrumb-list__item {
+  font-size: 10px;
+  font-style: 13px;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -450,6 +471,7 @@ template {
     width: 16px;
     height: 11px;
     padding: 0;
+    max-width: 340px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;

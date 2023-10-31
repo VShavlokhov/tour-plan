@@ -7,5 +7,5 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider-button--prev',
   },
   effect:  'coverflow',
-  autoplay: true,
+  // autoplay: true,
 });
